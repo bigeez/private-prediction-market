@@ -6,6 +6,8 @@ revealing their side or conviction while the market is live. Arcium computes
 the aggregate result over encrypted inputs, and Solana records the public market
 state, settlement lifecycle, and final revealed outcome.
 
+Live demo: https://private-prediction.vercel.app/
+
 ## Why This Needs Arcium
 
 Prediction markets work best when participants express honest beliefs. Public
