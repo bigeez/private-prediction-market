@@ -1,0 +1,17 @@
+[localnet]
+nodes = 2
+nodes_ips = [
+  [172, 20, 0, 100],
+  [172, 20, 0, 101]
+]
+localnet_timeout_secs = 60
+backends = ["Cerberus"]
+
+# For devnet or mainnet, add the cluster offset returned by `arcium deploy`.
+#
+# [clusters.devnet]
+# offset = 0
+#
+# [clusters.mainnet]
+# offset = 0
+

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Private Prediction Market</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="market-panel" aria-labelledby="market-title">
+        <div class="topbar">
+          <div>
+            <p class="eyebrow">Arcium + Solana</p>
+            <h1 id="market-title">Private Prediction Market</h1>
+          </div>
+          <div class="status-pill" id="market-status">Open</div>
+        </div>
+
+        <div class="market-question">
+          <span>Market</span>
+          <strong id="question-text">Will private prediction markets reduce copy-trading?</strong>
+        </div>
+
+        <canvas id="market-canvas" width="960" height="340" aria-label="Encrypted market activity visualization"></canvas>
+
+        <div class="metrics">
+          <div>
+            <span>Encrypted submissions</span>
+            <strong id="submission-count">0</strong>
+          </div>
+          <div>
+            <span>Visible signal</span>
+            <strong id="visible-signal">Hidden</strong>
+          </div>
+          <div>
+            <span>Settlement</span>
+            <strong id="settlement-state">Pending</strong>
+          </div>
+        </div>
+      </section>
+
+      <aside class="control-panel" aria-label="Market controls">
+        <form id="prediction-form">
+          <label>
+            Prediction
+            <select id="side-input">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </label>
+
+          <label>
+            Stake
+            <input id="stake-input" type="number" min="1" step="1" value="100" />
+          </label>
+
+          <button type="submit">Submit Encrypted Prediction</button>
+        </form>
+
+        <div class="actions">
+          <button id="close-button" type="button">Close Market</button>
+          <button id="settle-button" type="button">Reveal Settlement</button>
+          <button id="reset-button" type="button">Reset Demo</button>
+        </div>
+
+        <section class="explain">
+          <h2>Privacy Boundary</h2>
+          <p>Individual side and stake stay encrypted while the market is live. The UI only shows submission count until settlement.</p>
+        </section>
+
+        <section class="event-log">
+          <h2>Events</h2>
+          <ol id="event-log"></ol>
+        </section>
+      </aside>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

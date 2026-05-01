@@ -1,0 +1,7 @@
+[workspace]
+members = [
+  "encrypted-ixs",
+  "programs/private_market"
+]
+resolver = "2"
+

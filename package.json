@@ -1,0 +1,19 @@
+{
+  "name": "private-prediction-market",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Solana + Arcium private prediction market starter",
+  "scripts": {
+    "test": "node tests/market.test.mjs",
+    "simulate": "node scripts/demo.mjs"
+  },
+  "keywords": [
+    "arcium",
+    "solana",
+    "prediction-market",
+    "mpc",
+    "privacy"
+  ],
+  "license": "MIT"
+}
