@@ -53,7 +53,8 @@ npm test
 
 ## Open The Demo App
 
-Open `app/index.html` in a browser. The static demo shows the user flow:
+Open `app/index.html` in a browser, or deploy the repo to Vercel. The static
+demo shows the user flow:
 
 - submit encrypted predictions
 - keep live market signal hidden
